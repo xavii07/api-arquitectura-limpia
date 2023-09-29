@@ -25,7 +25,7 @@ export class Server {
 
     this.app.use(this.routes);
 
-    this.app.listen(3000, () => {
+    this.app.listen(this.port, () => {
       console.log(`App listening on http://localhost:${this.port}`);
     });
   }
